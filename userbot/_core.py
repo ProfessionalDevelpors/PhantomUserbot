@@ -2,10 +2,11 @@ import asyncio
 import os
 from datetime import datetime
 from pathlib import Path
+
 from telethon.tl.types import InputMessagesFilterDocument
+
+from userbot import ALIVE_NAME, bot
 from userbot.utils import admin_cmd, load_module, remove_plugin
-from userbot import ALIVE_NAME
-from userbot import bot
 
 DELETE_TIMEOUT = 5
 thumb_image_path = "./Resources/phantom.jpg"
