@@ -65,9 +65,7 @@ async def install(event):
                 )
             else:
                 os.remove(downloaded_file_name)
-                await event.edit(
-                    "**Plugin cannot be installed or is pre-installed.**"
-                )
+                await event.edit("**Plugin cannot be installed or is pre-installed.**")
         except Exception as e:  # pylint:disable=C0103,W0703
             await event.edit(str(e))
             os.remove(downloaded_file_name)
@@ -85,9 +83,7 @@ async def unload(event):
         await event.edit(f"Successfully unloaded {shortname}")
     except Exception as e:
         await event.edit(
-            "Successfully unloaded {shortname}\n{}".format(
-                shortname, str(e)
-            )
+            "Successfully unloaded {shortname}\n{}".format(shortname, str(e))
         )
 
 
