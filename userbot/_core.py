@@ -5,8 +5,11 @@ from pathlib import Path
 
 from telethon.tl.types import InputMessagesFilterDocument
 
-from userbot import ALIVE_NAME, bot
-from userbot.utils import admin_cmd, load_module, remove_plugin
+from userbot import ALIVE_NAME
+from userbot import bot
+from userbot.utils import admin_cmd
+from userbot.utils import load_module
+from userbot.utils import remove_plugin
 
 DELETE_TIMEOUT = 5
 thumb_image_path = "./Resources/phantom.jpg"
